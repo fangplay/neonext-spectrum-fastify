@@ -8,7 +8,13 @@
     "build": "rimraf dist && tsc",
     "dev": "nodemon src/index.ts",
     "start": "node dist/index.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "migrate:make": "knex migrate:make",
+    "migrate:latest": "knex migrate:latest",
+    "migrate:rollback": "knex migrate:rollback",
+    "migrate:up": "knex migrate:up",
+    "migrate:down": "knex migrate:down",
+    "migrate:list": "knex migrate:list"
   },
   "keywords": [],
   "author": "",
@@ -39,8 +45,8 @@
     "tsx": "^4.1.1",
     "typescript": "^5.2.2"
   },
-  "lintstaged":{
-    "*.ts":[
+  "lintstaged": {
+    "*.ts": [
       "prettier-config.prettierrc'src/*/*.ts'-write",
       "eslint.-ext.ts-fix"
     ]

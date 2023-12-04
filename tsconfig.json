@@ -7,7 +7,7 @@
     },
     "include": [
         "src/**/*.ts"
-    ],
+, "knexfile.ts"    ],
     "exclude": [
         ".eslintrc.js"
     ]
